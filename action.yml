@@ -1,0 +1,15 @@
+name: 'Postgres Client'
+description: 'Execute scripts with access to postgres tools'
+author: 'Rudenko Anatolii'
+branding:
+  icon: 'database'
+  color: 'blue'
+inputs:
+  path:
+    description: 'Path to a script'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
