@@ -7,6 +7,10 @@ pwd
 
 ls -la
 
+ls -la $SCRIPT_PATH
+
+cat $SCRIPT_PATH
+
 if [ -x $SCRIPT_PATH ]
 then
   echo "executable"
