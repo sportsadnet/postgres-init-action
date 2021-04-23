@@ -3,10 +3,10 @@
 SCRIPT_PATH=$1
 echo "param: ${SCRIPT_PATH}"
 
-IF [[ -x SCRIPT_PATH ]]
-THEN
+if [ -x $SCRIPT_PATH ]
+then
   echo "executable"
-  ./SCRIPT_PATH
-ELSE
+  ./$SCRIPT_PATH
+else
   echo "not executable"
-FI
+fi
