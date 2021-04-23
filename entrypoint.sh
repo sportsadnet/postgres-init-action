@@ -1,15 +1,6 @@
 #!/bin/bash
 
 SCRIPT_PATH=$1
-echo "param: ${SCRIPT_PATH}"
-
-pwd
-
-ls -la
-
-ls -la $SCRIPT_PATH
-
-cat $SCRIPT_PATH
 
 if [ -z $SCRIPT_PATH ]; then
   echo "File path is not defined"
