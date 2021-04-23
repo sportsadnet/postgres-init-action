@@ -1,11 +1,12 @@
 #!/bin/bash
 
-echo "param: ${$1}"
+SCRIPT_PATH=$1
+echo "param: ${SCRIPT_PATH}"
 
-IF [[ -x $1 ]]
+IF [[ -x SCRIPT_PATH ]]
 THEN
   echo "executable"
-  ./$1
-  ELSE
+  ./SCRIPT_PATH
+ELSE
   echo "not executable"
 FI
